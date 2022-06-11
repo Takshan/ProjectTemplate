@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CsfDock &mdash; CsfDock  documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Usage" href="usage.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="#" class="icon icon-home"> CsfDock
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="usage.html">Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reference.html">Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributor Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="codeofconduct.html">Code of Conduct</a></li>
+<li class="toctree-l1"><a class="reference internal" href="license.html">License</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/takshan/csfdock/releases">Changelog</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="#">CsfDock</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="#" class="icon icon-home"></a> &raquo;</li>
+      <li>CsfDock</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="csfdock">
+<h1>CsfDock<a class="headerlink" href="#csfdock" title="Permalink to this heading"></a></h1>
+<p><a class="reference external" href="https://pypi.org/project/csfdock/"><img alt="PyPI" src="https://img.shields.io/pypi/v/csfdock.svg" /></a> <a class="reference external" href="https://pypi.org/project/csfdock/"><img alt="Status" src="https://img.shields.io/pypi/status/csfdock.svg" /></a> <a class="reference external" href="https://pypi.org/project/csfdock"><img alt="Python Version" src="https://img.shields.io/pypi/pyversions/csfdock" /></a> <a class="reference external" href="https://opensource.org/licenses/MIT"><img alt="License" src="https://img.shields.io/pypi/l/csfdock" /></a></p>
+<p><a class="reference external" href="https://csfdock.readthedocs.io/"><img alt="Read the documentation at https://csfdock.readthedocs.io/" src="https://img.shields.io/readthedocs/csfdock/latest.svg?label=Read%20the%20Docs" /></a> <a class="reference external" href="https://github.com/takshan/csfdock/actions?workflow=Tests"><img alt="Tests" src="https://github.com/takshan/csfdock/workflows/Tests/badge.svg" /></a> <a class="reference external" href="https://codecov.io/gh/takshan/csfdock"><img alt="Codecov" src="https://codecov.io/gh/takshan/csfdock/branch/main/graph/badge.svg?token=B1J6NTBH4P" /></a></p>
+<p><a class="reference external" href="https://github.com/pre-commit/pre-commit"><img alt="pre-commit" src="https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&amp;logoColor=white" /></a> <a class="reference external" href="https://github.com/psf/black"><img alt="Black" src="https://img.shields.io/badge/code%20style-black-000000.svg" /></a></p>
+<p>A simple package for making custome scoring function in smina, visulaization of molecules, ligand and memebrane using py3dmol.</p>
+<p>An implementation of regression for optimizing scoring function and $alpha$ and $beta$ from experimental data.</p>
+<section id="features">
+<h2>Features<a class="headerlink" href="#features" title="Permalink to this heading"></a></h2>
+<ul class="simple">
+<li><p>Visualize Receptor, lipids and ligands</p></li>
+<li><p>Automate docking using  smina</p></li>
+<li><p>Calculate RMSD and plot RMSD Matrix</p></li>
+<li><p>Develop Custom Scoring Functions</p></li>
+<li><p>Optimize $alpha$ and $beta$</p></li>
+<li><p>and many more..</p></li>
+</ul>
+</section>
+<section id="requirements">
+<h2>Requirements<a class="headerlink" href="#requirements" title="Permalink to this heading"></a></h2>
+<ul class="simple">
+<li><p>TODO</p></li>
+</ul>
+</section>
+<section id="installation">
+<h2>Installation<a class="headerlink" href="#installation" title="Permalink to this heading"></a></h2>
+<p>You can install <em>CsfDock</em> via <a class="reference external" href="https://pip.pypa.io/">pip</a> from <a class="reference external" href="https://pypi.org/">PyPI</a>:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>pip install csfdock
+</pre></div>
+</div>
+</section>
+<section id="usage">
+<h2>Usage<a class="headerlink" href="#usage" title="Permalink to this heading"></a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">csfdock.ar2a_v3</span> <span class="kn">import</span> <span class="o">*</span>
+</pre></div>
+</div>
+<p>Create an Object of the ProjectStart:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">a2</span> <span class="o">=</span> <span class="n">ProjectStart</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Can set your project directory as follow which may not be same as the
+runing notebook.Creates a relative paths for files inside the project
+directory</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">a2</span><span class="o">.</span><span class="n">SetFolders</span><span class="p">(</span><span class="s2">&quot;.&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Adding a receptor into the project is as easy as following:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">a2</span><span class="o">.</span><span class="n">LoadReceptor</span><span class="p">(</span><span class="s2">&quot;membrane&quot;</span><span class="p">)</span>
+<span class="n">a2</span><span class="o">.</span><span class="n">SimpleView</span>
+</pre></div>
+</div>
+<figure class="align-default">
+<img alt="Image of csfdock" src="images/csfdock3.png" />
+</figure>
+<p>Similarly for Ligand as well</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">a2</span><span class="o">.</span><span class="n">LoadLigand</span><span class="p">(</span><span class="s2">&quot;./DATA/Conformer3D_CID_139199449.sdf&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><img alt="Image of csfdock4" src="images/csfdock4.png" /></p>
+<p>For docking visualization of grid box around active
+site is important. Here we can just give an input to create a grid and
+visualize it.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">a2</span><span class="o">.</span><span class="n">LoadBox</span><span class="p">([</span><span class="mf">7.623</span><span class="p">,</span> <span class="mf">3.103</span><span class="p">,</span> <span class="o">-</span><span class="mf">18.483</span><span class="p">],</span> <span class="p">[</span><span class="mf">30.0</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">20</span><span class="p">])</span>
+</pre></div>
+</div>
+<p>Whole view of the molecules loaded into the project instance can be
+visualize as following:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">a2</span><span class="o">.</span><span class="n">ShowMolecules</span><span class="p">()</span>
+</pre></div>
+</div>
+<p><img alt="Image of csfdock2" src="images/csfdock2.png" /></p>
+<p>View the detail information of the project instace
+using print() method on the instance variable.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">a2</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><img alt="Image of csfdock0" src="images/csfdock0.png" /></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">a2</span><span class="o">.</span><span class="n">display</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Visualize smiles code and generate 3D structures.</p>
+<p><img alt="Image of csfdock6" src="images/csfdock6.png" /></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">df</span> <span class="o">=</span><span class="n">rmsd_matrix</span><span class="p">(</span><span class="n">poses</span><span class="p">,</span><span class="n">verbose</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">plot</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">save</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">annot</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span><span class="s2">&quot;latest_calculation&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>View the RMSDs of the ligands docked in matrix view.</p>
+<p><img alt="Image of csfdock5" src="images/csfdock5.png" /></p>
+<p>Please see the <a class="reference external" href="usage.html">Command-line Reference</a> for details.</p>
+</section>
+<section id="contributing">
+<h2>Contributing<a class="headerlink" href="#contributing" title="Permalink to this heading"></a></h2>
+<p>Contributions are very welcome.
+To learn more, see the <a class="reference external" href="contributing.html">Contributor Guide</a>.</p>
+</section>
+<section id="license">
+<h2>License<a class="headerlink" href="#license" title="Permalink to this heading"></a></h2>
+<p>Distributed under the terms of the <a class="reference external" href="https://opensource.org/licenses/MIT">MIT license</a>,
+<em>CsfDock</em> is free and open source software.</p>
+</section>
+<section id="issues">
+<h2>Issues<a class="headerlink" href="#issues" title="Permalink to this heading"></a></h2>
+<p>If you encounter any problems,
+please <a class="reference external" href="https://github.com/takshan/csfdock/issues">file an issue</a> along with a detailed description.</p>
+<div class="toctree-wrapper compound">
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="usage.html" class="btn btn-neutral float-right" title="Usage" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Rahul Brahma.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
