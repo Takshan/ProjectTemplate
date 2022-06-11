@@ -1,5 +1,0 @@
-site_name: ProjectTemplate
-site_url: https://github.com/Takshan/ProjectTemplate/
-nav:
-    - Home: docs/index.rst
-theme: readthedocs
