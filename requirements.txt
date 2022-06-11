@@ -194,7 +194,7 @@ pep517==0.11.0
 pexpect @ file:///tmp/build/80754af9/pexpect_1594383317248/work
 pickle5==0.0.11
 pickleshare @ file:///tmp/build/80754af9/pickleshare_1594384075987/work
-Pillow==8.3.1
+Pillow==9.0.1
 pipenv==2022.6.7
 pixiedust==1.1.19
 platformdirs==2.1.0
