@@ -188,7 +188,7 @@ pandocfilters==1.4.3
 papermill==2.3.3
 param==1.11.1
 paramiko==2.10.1
-parso==0.7.1
+parso==0.8.3
 pathspec==0.9.0
 pep517==0.11.0
 pexpect @ file:///tmp/build/80754af9/pexpect_1594383317248/work
