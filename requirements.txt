@@ -49,7 +49,7 @@ colorcet==2.0.6
 colour==0.1.5
 commonmark==0.9.1
 configparser==5.0.2
-cookiecutter==1.7.3
+cookiecutter==2.1.1
 coverage==5.5
 csfdock==0.1.1
 cycler==0.10.0
